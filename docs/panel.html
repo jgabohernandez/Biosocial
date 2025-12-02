@@ -1,2 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel Profesional</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!DOCTYPE html><html><body><h1>BiosoCIAL Demo</h1><p>Contenido estático listo.</p></body></html>
+<header class="header">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="assets/logo.png" alt="BiosoCIAL" class="logo">
+      <div style="color:white;font-weight:700;font-size:18px">BiosoCIAL</div>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paciente.html">Paciente</a>
+      <a href="radiografia.html">Radiografía</a>
+      <a href="expediente.html">Expediente</a>
+      <a href="alertas.html">Alertas</a>
+      <a href="seguimiento.html">Seguimiento</a>
+      <a href="panel.html">Panel</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="container">
+
+  <div class="card">
+    <h2 class="section-title">Panel Profesional</h2>
+    <p>Indicadores, reportes y gráficas de ejemplo.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="section-title">Indicadores</h3>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="value">42</div><div class="small">Pacientes activos</div></div>
+      <div class="kpi"><div class="value">76%</div><div class="small">Adherencia promedio</div></div>
+      <div class="kpi"><div class="value">3</div><div class="small">Alertas críticas</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 class="section-title">Gráfica</h3>
+    <svg width="100%" height="200" viewBox="0 0 600 200">
+      <rect width="100%" height="100%" fill="#fbfffe"></rect>
+      <polyline points="10,150 80,120 150,130 220,110 290,120 360,90 430,100 500,70 580,90"
+                fill="none" stroke="#0f6b6b" stroke-width="4"/>
+    </svg>
+  </div>
+
+</div>
+
+<footer class="footer">© 2025 BiosoCIAL — Demo estática. No es un sistema clínico real.</footer>
+
+</body>
+</html>
