@@ -1,2 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paciente</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!DOCTYPE html><html><body><h1>BiosoCIAL Demo</h1><p>Contenido estático listo.</p></body></html>
+<header class="header">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="assets/logo.png" alt="BiosoCIAL" class="logo">
+      <div style="color:white;font-weight:700;font-size:18px">BiosoCIAL</div>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paciente.html">Paciente</a>
+      <a href="radiografia.html">Radiografía</a>
+      <a href="expediente.html">Expediente</a>
+      <a href="alertas.html">Alertas</a>
+      <a href="seguimiento.html">Seguimiento</a>
+      <a href="panel.html">Panel</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2 class="section-title">Ficha del paciente (ejemplo)</h2>
+
+    <form>
+      <div class="form-row">
+        <div style="flex:1">
+          <label class="form-label">Nombre</label>
+          <input class="input" value="Juan Pérez" disabled>
+        </div>
+        <div style="width:120px">
+          <label class="form-label">Edad</label>
+          <input class="input" value="32" disabled>
+        </div>
+      </div>
+
+      <div class="form-row" style="margin-top:12px">
+        <div style="flex:1">
+          <label class="form-label">Diagnóstico</label>
+          <input class="input" value="Trastorno por uso de sustancias" disabled>
+        </div>
+        <div style="width:180px">
+          <label class="form-label">Ingreso</label>
+          <input class="input" value="2025-01-15" disabled>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <label class="form-label">Responsable</label>
+        <input class="input" value="Dra. María Gómez" disabled>
+      </div>
+
+      <div style="margin-top:12px">
+        <label class="form-label">Notas</label>
+        <textarea class="input" disabled rows="3">Paciente con buen avance y participación grupal.</textarea>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="card">
+    <h3 class="section-title">Historial</h3>
+    <table class="table">
+      <tr><th>Fecha</th><th>Evento</th><th>Comentario</th></tr>
+      <tr><td>2025-01-15</td><td>Ingreso</td><td>Registro inicial</td></tr>
+      <tr><td>2025-02-01</td><td>Evaluación</td><td>Mejoría emocional</td></tr>
+      <tr><td>2025-03-10</td><td>Alerta</td><td>Variabilidad emocional elevada</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<footer class="footer">© 2025 BiosoCIAL — Demo estática. No es un sistema clínico real.</footer>
+</body>
+</html>
