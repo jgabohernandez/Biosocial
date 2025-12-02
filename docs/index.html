@@ -1,2 +1,68 @@
+cat > docs/index.html <<'HTML'
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BiosoCIAL - Demo</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="assets/logo.png" alt="BiosoCIAL" class="logo">
+      <div style="color:white;font-weight:700;font-size:18px">BiosoCIAL</div>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paciente.html">Paciente</a>
+      <a href="radiografia.html">Radiografía</a>
+      <a href="expediente.html">Expediente</a>
+      <a href="alertas.html">Alertas</a>
+      <a href="seguimiento.html">Seguimiento</a>
+      <a href="panel.html">Panel</a>
+    </nav>
+  </div>
+</header>
 
-<!DOCTYPE html><html><body><h1>BiosoCIAL Demo</h1><p>Contenido estático listo.</p></body></html>
+<section class="hero container">
+  <h1>BiosoCIAL</h1>
+  <p>Ciencia que conecta lo biológico con lo humano.</p>
+  <p>Demo estática: ejemplos de datos, informes y alertas para mostrar la interfaz y el contenido de la plataforma.</p>
+</section>
+
+<div class="container">
+  <div class="card">
+    <h2 class="section-title">Resumen de ejemplo</h2>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="value">78%</div><div class="small">Adherencia terapéutica</div></div>
+      <div class="kpi"><div class="value">5</div><div class="small">Alertas activas</div></div>
+      <div class="kpi"><div class="value">2x</div><div class="small">Reducción estimada de recaídas</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 class="section-title">Noticias & Notificaciones</h3>
+    <div class="report">
+      <div class="panel">
+        <strong>Nueva validación clínica</strong>
+        <p class="small">Se ha incorporado un cuestionario validado para seguimiento diario.</p>
+      </div>
+      <div class="panel">
+        <strong>Proyecto piloto</strong>
+        <p class="small">San Luis Potosí: 12 clínicas participantes en fase piloto.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-grid">
+    <div>
+      <h3 class="section-title">Visión rápida</h3>
+      <p class="small">La plataforma permite centralizar expedientes, detectar riesgos y ofrecer seguimiento humanizado a pacientes en rehabilitación.</p>
+    </div>
+    <div>
+      <h3 class="section-title">Souvenir con causa</h3>
+      <p class="small">Pulseras y objetos elaborados por personas en reinserción que simbolizan renacimiento y tejido social.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">© 2025 BiosoCIAL — Demo estática. No es un sistema clínico real.</footer>
+</body></html>
+HTML
